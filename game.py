@@ -142,7 +142,7 @@ def game():
         Monster("a goblin", 1, 50, 50),
         Monster("an orc", 2, 100, 100),
         Monster("a ghost", 3, 150, 100, min_player_level=3),
-        Monster("a dragon", 4, 200, 500, min_player_level=4,guaranteed_level_up=True),
+        Monster("a dragon", 4, 200, 500, min_player_level=4, guaranteed_level_up=True),
     ]
 
 
