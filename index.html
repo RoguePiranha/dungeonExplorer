@@ -1,21 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <title>Display README</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body>
-    <div id="content"></div>
 
-    <script>
-        fetch('README.md')
-            .then(response => response.text())
-            .then(text => {
-                // Convert markdown to HTML
-                const html = marked(text);
-                // Insert the HTML into the div with id 'content'
-                document.getElementById('content').innerHTML = html;
-            });
-    </script>
+<head>
+    <meta charset=utf-8 />
+    <title>Dungeon Explorer</title>
+    <link href="media/davewhipp-screen.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="media/davewhipp-print.css" type="text/css" rel="stylesheet" media="print">
+</head>
+
+<body>
+    <div id="main">
+        <div id="content">
+            <h1>Overview</h1>
+            <br>
+            <p>This is a choose your own adventure game built in Python. In this game, the player will be able to pick
+                which path they choose as they move through the 10x10 dungeon. Each room has a different encounter based
+                on the random number generator, which decides which event or monster will be placed into each room as
+                the player reaches it.
+                The program is built around linked lists and classes, which made it easy to setup each event and monster
+                and will make it very easy in the future to add upon the foundation of the game.</p>
+
+            <p>I have actually made a choose your own adventure game in Python before, but it was both not as complex as
+                this one and also more difficult to test and maintain. This is because I used a lot of if statements and
+                while loops to make the game work, which made it very difficult to add upon the game as it progressed.
+                This time, I used classes and linked lists to make the game more modular and easier to add upon.</p>
+
+            <p><a href="https://www.loom.com/share/d74f4058df9e4553b08390d556123d5a">Software Demo Video</a></p>
+
+            <h2>Development Environment</h2>
+            <br>
+            <p>For building this program, I used Visual Studio Code and Python. I used the Python extension in VS Code
+                to run the program.</p>
+
+            <p>The only libraries I used were the random library and the time library. The random library was used to
+                determine the encounter
+                in each room as well as the damage output of the player and the enemy. The time library was used to make
+                the game more interactive
+                by having the text appear on screen more slowly, which makes the game feel more like a text adventure.
+            </p>
+
+            <h2>Useful Websites</h2>
+            <br>
+            <ul>
+                <li><a href="https://www.tutorialspoint.com/python_data_structure/python_linked_lists.htm">Tutorials
+                        Point</a></li>
+                <li><a href="https://www.w3schools.com/python/">W3Schools</a></li>
+                <li><a href="https://angellom.medium.com/writing-a-python-dungeon-game-part-i-47e35668f16b">Medium</a>
+                </li>
+            </ul>
+
+            <h2>Future Work</h2>
+            <br>
+            <ul>
+                <li>- Add GUI to make the game more interactive</li>
+                <li>- Add more monsters and events to make the game more interesting</li>
+                <li>- Add more paths and more path restrictions to make the game more complex instead of just an open
+                    10x10 grid</li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
