@@ -17,8 +17,6 @@ by having the text appear on screen more slowly, which makes the game feel more 
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [Tutorials Point](https://www.tutorialspoint.com/python_data_structure/python_linked_lists.htm)
 - [W3Schools](https://www.w3schools.com/python/)
 - [Medium](https://angellom.medium.com/writing-a-python-dungeon-game-part-i-47e35668f16b)
