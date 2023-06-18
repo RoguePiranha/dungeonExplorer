@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display README</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script>
+        fetch('README.md')
+            .then(response => response.text())
+            .then(text => {
+                // Convert markdown to HTML
+                const html = marked(text);
+                // Insert the HTML into the div with id 'content'
+                document.getElementById('content').innerHTML = html;
+            });
+    </script>
+</body>
+</html>
